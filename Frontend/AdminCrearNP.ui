@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdmiCNP</class>
+ <widget class="QWidget" name="AdmiCNP">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>442</width>
+    <height>407</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="labelTitulo">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Adminitrador Crear</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCNegocio">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>83</y>
+     <width>115</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Crear Negocio</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelCProducto">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>211</y>
+     <width>123</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Crear Producto</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelNoNegocio">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>108</y>
+     <width>108</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nombre Negocio:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>134</y>
+     <width>80</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Id Neogocio:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNombreN">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>108</y>
+     <width>251</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMensajeN">
+   <property name="geometry">
+    <rect>
+     <x>119</x>
+     <y>134</y>
+     <width>289</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>El Id se ingresa automaticamente el sistema.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelNombreP">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>258</y>
+     <width>117</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nombre Producto:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMensajeP">
+   <property name="geometry">
+    <rect>
+     <x>118</x>
+     <y>236</y>
+     <width>289</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>El Id se ingresa automaticamente el sistema.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelIP">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>236</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Id Prodcuto:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelINe">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>284</y>
+     <width>72</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Id Negocio:</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxINe">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>284</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Hola</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="labelValor">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>310</y>
+     <width>39</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Valor:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditValor">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>310</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonCrearN">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Crear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonCrearP">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Crear</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonVolver">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>370</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditNoPr">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>258</y>
+     <width>241</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

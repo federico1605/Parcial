@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FacrturaMesero</class>
+ <widget class="QWidget" name="FacrturaMesero">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>742</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>16</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Facturar</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>721</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Id Pedido</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nueva columna</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Mesa</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Estado Pedido</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nueva columna</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nueva columna</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Negocio</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>224</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Que Pedido desea Facturar.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="botonFacturar">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>721</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Facturar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="butonVolver">
+   <property name="geometry">
+    <rect>
+     <x>624</x>
+     <y>310</y>
+     <width>111</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Volver</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

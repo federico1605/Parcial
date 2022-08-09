@@ -1,0 +1,181 @@
+import self as self
+from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
+import os
+myDir = os.getcwd()
+sys.path.append(myDir)
+
+from Parcial.Controlador.CierreControlador import CierreController
+
+class Ui_Form(object):
+    def __init__(self):
+        self.controlador = CierreController(self)
+
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        #Para que la tabala no sea editable
+        Form.setFixedSize(786, 423)
+
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(0, 30, 784, 259))
+        self.widget.setObjectName("widget")
+        self.gridLayout_2 = QtWidgets.QGridLayout(self.widget)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.gridLayout = QtWidgets.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.labelNegocio = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        font.setStyleStrategy(QtGui.QFont.NoAntialias)
+        self.labelNegocio.setFont(font)
+        self.labelNegocio.setObjectName("labelNegocio")
+        self.gridLayout.addWidget(self.labelNegocio, 0, 0, 1, 1)
+        self.labelMesa = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        font.setStyleStrategy(QtGui.QFont.NoAntialias)
+        self.labelMesa.setFont(font)
+        self.labelMesa.setObjectName("labelMesa")
+        self.gridLayout.addWidget(self.labelMesa, 0, 1, 1, 1)
+        self.labeMesero = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(20)
+        font.setBold(True)
+        font.setWeight(75)
+        font.setStyleStrategy(QtGui.QFont.NoAntialias)
+        self.labeMesero.setFont(font)
+        self.labeMesero.setObjectName("labeMesero")
+        self.gridLayout.addWidget(self.labeMesero, 0, 2, 1, 1)
+        self.tableNegocio = QtWidgets.QTableWidget(self.widget)
+        self.tableNegocio.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.tableNegocio.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableNegocio.setAutoScroll(True)
+        self.tableNegocio.setObjectName("tableNegocio")
+        self.tableNegocio.setColumnCount(2)
+        self.tableNegocio.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableNegocio.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableNegocio.setHorizontalHeaderItem(1, item)
+        self.gridLayout.addWidget(self.tableNegocio, 1, 0, 1, 1)
+
+        self.cierreCajaNegocio()
+
+        self.tableMesa = QtWidgets.QTableWidget(self.widget)
+        self.tableMesa.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.tableMesa.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableMesa.setAutoScroll(True)
+        self.tableMesa.setObjectName("tableMesa")
+        self.tableMesa.setColumnCount(2)
+        self.tableMesa.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableMesa.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableMesa.setHorizontalHeaderItem(1, item)
+        self.gridLayout.addWidget(self.tableMesa, 1, 1, 1, 1)
+
+        self.cierrCajaMesa()
+
+        self.tableMesero = QtWidgets.QTableWidget(self.widget)
+        self.tableMesero.setVerticalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOn)
+        self.tableMesero.setHorizontalScrollBarPolicy(QtCore.Qt.ScrollBarAlwaysOff)
+        self.tableMesero.setAutoScroll(True)
+        self.tableMesero.setObjectName("tableMesero")
+        self.tableMesero.setColumnCount(2)
+        self.tableMesero.setRowCount(0)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableMesero.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        self.tableMesero.setHorizontalHeaderItem(1, item)
+        self.gridLayout.addWidget(self.tableMesero, 1, 2, 1, 1)
+
+        self.cierreCajaMesero()
+
+        self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 6)
+        self.labelTotalNegocio = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.labelTotalNegocio.setFont(font)
+        self.labelTotalNegocio.setObjectName("labelTotalNegocio")
+        self.gridLayout_2.addWidget(self.labelTotalNegocio, 1, 0, 1, 1)
+        self.labelresultNe = QtWidgets.QLabel(self.widget)
+        self.labelresultNe.setText("")
+        self.labelresultNe.setObjectName("labelresultNe")
+        self.gridLayout_2.addWidget(self.labelresultNe, 1, 1, 1, 1)
+        self.labelTotalMesa = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.labelTotalMesa.setFont(font)
+        self.labelTotalMesa.setObjectName("labelTotalMesa")
+        self.gridLayout_2.addWidget(self.labelTotalMesa, 1, 2, 1, 1)
+        self.labelresultadoM = QtWidgets.QLabel(self.widget)
+        self.labelresultadoM.setText("")
+        self.labelresultadoM.setObjectName("labelresultadoM")
+        self.gridLayout_2.addWidget(self.labelresultadoM, 1, 3, 1, 1)
+        self.labelTotalMesero = QtWidgets.QLabel(self.widget)
+        font = QtGui.QFont()
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.labelTotalMesero.setFont(font)
+        self.labelTotalMesero.setObjectName("labelTotalMesero")
+        self.gridLayout_2.addWidget(self.labelTotalMesero, 1, 4, 1, 1)
+        self.labelresultMesero = QtWidgets.QLabel(self.widget)
+        self.labelresultMesero.setText("")
+        self.labelresultMesero.setObjectName("labelresultMesero")
+        self.gridLayout_2.addWidget(self.labelresultMesero, 1, 5, 1, 1)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+
+
+    def cierreCajaNegocio(self):
+        self.controlador.generarNegocios()
+
+    def cierrCajaMesa(self):
+        self.controlador.generarMesa()
+
+    def cierreCajaMesero(self):
+        self.controlador.generarMeseros()
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.labelNegocio.setText(_translate("Form", "Negocio"))
+        self.labelMesa.setText(_translate("Form", "Mesa"))
+        self.labeMesero.setText(_translate("Form", "Mesero"))
+        item = self.tableNegocio.horizontalHeaderItem(0)
+        item.setText(_translate("Form", "Negocio"))
+        item = self.tableNegocio.horizontalHeaderItem(1)
+        item.setText(_translate("Form", "Ventas totales"))
+        item = self.tableMesa.horizontalHeaderItem(0)
+        item.setText(_translate("Form", "Mesa"))
+        item = self.tableMesa.horizontalHeaderItem(1)
+        item.setText(_translate("Form", "Ventas totales"))
+        item = self.tableMesero.horizontalHeaderItem(0)
+        item.setText(_translate("Form", "Mesero"))
+        item = self.tableMesero.horizontalHeaderItem(1)
+        item.setText(_translate("Form", "Ventas totales"))
+        self.labelTotalNegocio.setText(_translate("Form", "Total:"))
+        self.labelTotalMesa.setText(_translate("Form", "Total:"))
+        self.labelTotalMesero.setText(_translate("Form", "Total:"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())

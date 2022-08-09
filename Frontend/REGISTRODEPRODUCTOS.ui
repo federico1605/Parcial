@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>731</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Buscar Usuario</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableUsuario">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>120</y>
+        <width>601</width>
+        <height>301</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>idusuario</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>nombre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>telefono</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>contraseña</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>idnegocio</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>rol</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="BotonBuscarUsuario">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BUSCAR</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Buscar Negocio</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableNegocio">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>140</y>
+        <width>681</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string> nombnegocio</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>idnegocio</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>73</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Codigo</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="textoCodigo">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="BotonBuscarNegocio">
+      <property name="geometry">
+       <rect>
+        <x>514</x>
+        <y>510</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BUSCAR</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Buscar Producto</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableProducto">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>91</y>
+        <width>671</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <column>
+       <property name="text">
+        <string>nomproducto</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>idproducto</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>idnegocio</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>valor</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="BotonBuscarProducto">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>480</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>BUSCAR</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
